@@ -1,0 +1,214 @@
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+:root {
+  --primary-text-color: #212121;
+  --second-text-color: #757575;
+  --hover-color: #2196f3;
+  --background-color: #e5e5e5;
+  --header-background-color: #ffffff;
+  --third-background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: var(--primary-text-color);
+}
+
+.header {
+  background-color: var(--header-background-color);
+  font-style: normal;
+}
+/* Logo */
+.header-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.header-part-logo {
+  color: #2196f3;
+}
+/* Навигация */
+.header-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--hover-color);
+}
+.current {
+  color: var(--accent-color);
+}
+/* Контакты */
+.header-contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--second-text-color);
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--hover-color);
+}
+
+/* Герой */
+.hero {
+  background-color: var(--third-background-color);
+  color: #ffffff;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+button {
+  background-color: var(--hover-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+}
+button:hover,
+button:focus {
+  background-color: #188ce8;
+}
+/* Особенности */
+.decision-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.decitsion-text {
+  color: var(--second-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+/* Чем занимаемся */
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Команда */
+.team {
+  background-color: var(--second-background-color);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.name {
+  background-color: #ffffff;
+}
+.name p {
+  color: var(--second-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.name h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Подвал */
+.footer {
+  background-color: var(--third-background-color);
+}
+.footer-logo {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.footer-part-logo {
+  color: #2196f3;
+}
+.footer p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--hover-color);
+}
+
+.filters-button {
+  background-color: var(--second-background-color);
+  color: var(--primary-text-color);
+}
+.filters-button:hover,
+.filters-button:focus {
+  background-color: var(--hover-color);
+  color: #ffffff;
+}
+
+.filters-text {
+  color: var(--second-text-color);
+}
+.filters-link {
+  list-style: none;
+  text-decoration: none;
+}
+.filters-title {
+  color: var(--primary-text-color);
+}
