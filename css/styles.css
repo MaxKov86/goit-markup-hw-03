@@ -26,16 +26,53 @@ html {
   box-sizing: inherit;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: var(--primary-text-color);
 }
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid red;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .header {
   background-color: var(--header-background-color);
   font-style: normal;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ececec;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 /* Logo */
 .header-logo {
@@ -46,17 +83,26 @@ body {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #000000;
+  padding-left: 25px;
 }
 .header-part-logo {
   color: #2196f3;
 }
 /* Навигация */
+.header-nav-list {
+  display: flex;
+  margin-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header-nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  padding-left: 50px;
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
@@ -66,6 +112,11 @@ body {
   color: var(--accent-color);
 }
 /* Контакты */
+.header-contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
 .header-contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -73,6 +124,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--second-text-color);
+  padding-left: 50px;
 }
 
 .header-contact-link:hover,
@@ -82,43 +134,60 @@ body {
 
 /* Герой */
 .hero {
+  text-align: center;
   background-color: var(--third-background-color);
   color: #ffffff;
 }
+.hero > .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero-title {
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
-button {
+.btn {
+  display: inline-block;
   background-color: var(--hover-color);
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
+  padding: 10px 32px;
+  min-width: 200px;
 }
 button:hover,
 button:focus {
   background-color: #188ce8;
 }
 /* Особенности */
+.decition-list {
+  display: flex;
+}
+
+.decition-item:not(:last-child) {
+  margin-right: 30px;
+}
 .decision-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .decitsion-text {
   color: var(--second-text-color);
@@ -126,49 +195,84 @@ button:focus {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  width: 270px;
+  height: 75px;
 }
 /* Чем занимаемся */
 .about-title {
+  min-width: 376px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.about-images {
+  display: flex;
+  justify-content: center;
+}
+.about-item {
+  display: block;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* Команда */
 .team {
   background-color: var(--second-background-color);
 }
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
-.name {
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-name-item {
+  display: block;
   background-color: #ffffff;
 }
-.name p {
+
+.team-name-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.member-image {
+  margin-bottom: 30px;
+}
+
+.team-name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team-name-text {
   color: var(--second-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-}
-.name h3 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
+  padding-bottom: 30px;
 }
 /* Подвал */
 .footer {
   background-color: var(--third-background-color);
 }
 .footer-logo {
+  display: block;
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -176,11 +280,13 @@ button:focus {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 .footer-part-logo {
   color: #2196f3;
 }
-.footer p {
+.footer-address-text {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -188,8 +294,10 @@ button:focus {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 9px;
 }
 .footer-link {
+  display: block;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -198,14 +306,32 @@ button:focus {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-address {
+  padding-bottom: 60px;
+}
+
 .footer-link:hover,
 .footer-link:focus {
   color: var(--hover-color);
 }
 
+.filters-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
 .filters-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  display: inline-block;
   background-color: var(--second-background-color);
   color: var(--primary-text-color);
+  border: transparent;
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -213,13 +339,38 @@ button:focus {
   color: #ffffff;
 }
 
+.filters-button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.filters-item {
+  width: calc((100% - 60px) / 3);
+}
+
 .filters-text {
   color: var(--second-text-color);
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 .filters-link {
   list-style: none;
   text-decoration: none;
 }
+
+.filters-image {
+  display: block;
+  margin-bottom: 20px;
+}
 .filters-title {
   color: var(--primary-text-color);
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-bottom: 4px;
 }
