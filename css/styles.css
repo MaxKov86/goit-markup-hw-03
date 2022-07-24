@@ -63,7 +63,6 @@ body {
 
 .header {
   background-color: var(--header-background-color);
-  font-style: normal;
   border-bottom: 1px solid #ececec;
 }
 .header > .container {
@@ -155,8 +154,6 @@ body {
 }
 
 .hero > .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -282,7 +279,7 @@ button:focus {
 }
 
 .member {
-  padding: 30px 50px;
+  padding: 30px 20px;
 }
 
 .team-name-title {
@@ -308,6 +305,8 @@ button:focus {
 /* Подвал */
 .footer {
   background-color: var(--third-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -322,7 +321,6 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -360,10 +358,6 @@ button:focus {
   margin-bottom: 9px;
 }
 
-.footer-address {
-  padding-bottom: 60px;
-}
-
 .footer-link:hover,
 .footer-link:focus {
   color: var(--hover-color);
@@ -376,7 +370,7 @@ button:focus {
 }
 
 .filters-button {
-  display: inline-block;
+  display: block;
   padding: 6px 22px;
 
   border: transparent;
@@ -404,7 +398,6 @@ button:focus {
 
 .filters-item {
   width: calc((100% - 60px) / 3);
-  border: 1px solid #eeeeee;
 }
 
 .filters-item:hover,
@@ -413,12 +406,15 @@ button:focus {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.filters-item-text {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
 .filters-text {
   color: var(--second-text-color);
-
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
 
 .filters-link {
@@ -428,14 +424,11 @@ button:focus {
 
 .filters-image {
   display: block;
-  margin-bottom: 20px;
-  max-width: 370px;
+  max-width: 100%;
+  height: auto;
 }
 
 .filters-title {
   color: var(--primary-text-color);
-
-  padding-right: 24px;
-  padding-left: 24px;
   margin-bottom: 4px;
 }
