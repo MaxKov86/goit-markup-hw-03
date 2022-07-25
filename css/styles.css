@@ -278,6 +278,10 @@ button:focus {
   margin-right: 30px;
 }
 
+.member-image {
+  display: block;
+}
+
 .member {
   padding: 30px 20px;
 }
@@ -366,7 +370,7 @@ button:focus {
 .filters-button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filters-button {
@@ -414,6 +418,11 @@ button:focus {
 }
 
 .filters-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
   color: var(--second-text-color);
 }
 
@@ -429,6 +438,10 @@ button:focus {
 }
 
 .filters-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
